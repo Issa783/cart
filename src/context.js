@@ -27,7 +27,7 @@ const AppProvider = ({ children }) => {
   useEffect(()=>{
     dispatch({type:'GET_TOTALS'})
   },[state.cart])
-  /*const fetchData = async () => {
+  const fetchData = async () => {
     dispatch({ type: 'LOADING' });
     try {
       const response = await fetch(url);
@@ -44,7 +44,7 @@ const AppProvider = ({ children }) => {
 
   useEffect(() => {
     fetchData();
-  }, []);*/
+  }, []);
  // Add an empty dependency array
  return (
   <AppContext.Provider
